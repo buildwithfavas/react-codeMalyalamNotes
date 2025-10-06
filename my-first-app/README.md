@@ -29,5 +29,10 @@
 ## 1-JSX
 - JSX : JS+XML
 
+## React Components
+- Functional Components
+- Class Components
+
+- Adding CSS to Components
 
 
