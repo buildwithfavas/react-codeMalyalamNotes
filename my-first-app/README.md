@@ -36,3 +36,18 @@
 - Adding CSS to Components
 
 ## React Props
+## State
+
+- Components structure in this example:
+- index
+  - Header
+  - List
+    - Tools
+    - ListItem
+      - Label
+  - Footer
+
+  - State variable (state makes the react page dynamic)
+    - initialisation
+    - Read
+    - Write

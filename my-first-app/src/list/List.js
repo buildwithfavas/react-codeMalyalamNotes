@@ -17,16 +17,44 @@ const arr = [{
 },];
 
 class List extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: arr
+        };
+    }
+
+    onListChange = (e) => {
+        //console.log(e.target.value);
+        const value = e.target.value;
+        const newArr = arr.filter((item) => {
+            if (value === "all") {
+                return true;
+            }
+            if (value === "active") {
+                return item.isActive === true;
+            }
+            if (value === "non-active") {
+                return item.isActive === false;
+            }
+            return false;
+        });
+
+        this.setState({
+            data: newArr
+        });
+    }
+
     render() {
         return (
-            <Tools>
-            <div className='app-list'>
-                {
-                    arr.map((obj) => {
-                        return <ListItem className="task-row" key={obj.title} title={obj.title} descr={obj.descr} isActive={obj.isActive} />
-                    })
-                }
-            </div>
+            <Tools onAction={this.onListChange}>
+                <div className='app-list'>
+                    {
+                        this.state.data.map((obj) => {
+                            return <ListItem className="task-row" key={obj.title} title={obj.title} descr={obj.descr} isActive={obj.isActive} />
+                        })
+                    }
+                </div>
             </Tools>
         );
     }
