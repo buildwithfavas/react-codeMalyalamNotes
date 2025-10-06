@@ -36,8 +36,8 @@
 - Adding CSS to Components
 
 ## React Props
-## State
 
+## State
 - Components structure in this example:
 - index
   - Header
@@ -51,3 +51,6 @@
     - initialisation
     - Read
     - Write
+
+## Controlled Component
+- If a prop controll the functionality of a component then its called controlled component.
