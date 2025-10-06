@@ -1,22 +1,22 @@
 import Label from "./Label";
+import "./Listitem.css";
 
-function ListItem() {
+function ListItem(props) {
+    const { title, descr, isActive } = props;
     return (
         <div className='list-item'>
-            <hr />
+
             <div className='list-title'>
-                <h4>My Title One</h4>
+                <h4>{title}</h4>
             </div>
             <div className='list-descr'>
-                This a very big description
+                {descr}
             </div>
+            <br></br>
             <div className='list-label'>
-                <Label />
-                <Label />
-                <Label />
-                <Label />
+                <Label onAction={()=>console.log("clicked")} isActive={isActive} />
             </div>
-            <hr />
+
         </div>
     );
 }

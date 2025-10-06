@@ -1,0 +1,12 @@
+.app-header{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.header-title{
+    font-size: x-large;
+}
