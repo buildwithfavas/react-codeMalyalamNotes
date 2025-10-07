@@ -2,7 +2,7 @@ import React from "react";
 import Tools from "../../components/Tools";
 import SimpleList from "../SimpleList";
 
-class List extends React.Component {
+class HomePage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -84,4 +84,4 @@ class List extends React.Component {
     }
 }
 
-export default List;
+export default HomePage;

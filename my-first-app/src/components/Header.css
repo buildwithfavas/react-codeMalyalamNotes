@@ -10,3 +10,7 @@
 .header-title{
     font-size: x-large;
 }
+
+span:hover{
+    cursor: pointer;
+}

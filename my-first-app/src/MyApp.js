@@ -3,6 +3,7 @@ import HomePage from './list/Pages/HomePage';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import DummyPage from './list/Pages/DummyPage';
+import Usage from "./list/Pages/Usage";
 
 class MyApp extends Component {
 
@@ -13,7 +14,7 @@ class MyApp extends Component {
         };
     }
 
-    handleMenuSelect = (value) =>  {
+    handleMenuSelect = (value) => {
         console.log(value);
         this.setState({
             currentSelected: value
@@ -29,10 +30,10 @@ class MyApp extends Component {
             case 'home':
                 return <HomePage />
             case 'usage':
-                return <DummyPage key="usage" name='Usage' />
-                case 'settings':
+                return <Usage />
+            case 'settings':
                 return <DummyPage key="settings" name='Settings' />
-                case 'logout':
+            case 'logout':
                 return <DummyPage key="logout" name='Logout' />
             default:
                 break;

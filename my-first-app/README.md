@@ -114,3 +114,13 @@
   - No 'this' problems
   - Reusing stateful logic
   - Reduced use of HOC (Higher Order Component)
+- Behind the seen Hooks works by using Closure
+
+## useState
+- to manage state in functional components
+  - Initialize State
+  - Update State
+  - Read State
+  - Render
+  
+- example: const [value, setValue] = useState(0);
