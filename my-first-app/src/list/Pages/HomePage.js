@@ -1,32 +1,41 @@
 import React from "react";
-import Tools from "../components/Tools";
-import SimpleList from "./SimpleList";
-
-const arr = [{
-    id: 1,
-    title: "Appointment for October",
-    descr: "The patient is rescheduled to October",
-    isActive: false
-}, {
-    id: 2,
-    title: "Appointment for November",
-    descr: "The patient is rescheduled to November",
-    isActive: true
-}, {
-    id: 3,
-    title: "Appointment for December",
-    descr: "The patient is rescheduled to December",
-    isActive: false
-},];
+import Tools from "../../components/Tools";
+import SimpleList from "../SimpleList";
 
 class List extends React.Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
-            data: arr,
+            data: [],
             activeState: "all",
+            message: ''
         };
+    }
+
+    componentDidMount() {
+        console.log("componentDidMount");
+        fetch("/data.json")
+            .then((data) => data.json())
+            .then((data) => {
+                this.setState({
+                    data: data
+                });
+            })
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log("componentDidUpdate");
+        if (prevState.message !== this.state.message) {
+            this.setState({
+                message: 'Message'
+            });
+        }
+    }
+
+    componentWillUnmount() {
+        console.log("componentWillUnmount");
     }
 
     onListChange = (e) => {
@@ -36,7 +45,6 @@ class List extends React.Component {
         this.setState({
             activeState: value
         });
-
     }
 
     handleDelete = (item) => {
