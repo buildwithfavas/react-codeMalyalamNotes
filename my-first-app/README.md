@@ -80,3 +80,37 @@
 
 - diff algorithm
 - compare virtual DOM then update real DOM - 3 steps
+
+## React Hooks
+- class Component
+  - Lifecycle Methods
+  - State
+  - Context
+  - Reference
+- Functional Component
+
+- Basic Hooks
+  - useState
+  - useEffect
+  - useContext
+- Additional Hooks
+  - useReducer
+  - useCallback
+  - useMemo
+  - useRef
+  - useImperativeHandle
+  - useLayoutEffect
+  - useDebugValue
+- Custom Hooks
+
+- Rules to write Hooks
+  - declaration in top level before return
+  - don't write inside conditions
+  - only in functional components(exception: custom hooks)
+  - custom hooks should named with 'use'
+
+- Advantages
+  - Functional Components can be used for all React Features
+  - No 'this' problems
+  - Reusing stateful logic
+  - Reduced use of HOC (Higher Order Component)
