@@ -61,3 +61,22 @@
 - Unmount (ComponentWillUnmount())
 
 - sideEffects
+
+## Virtual DOM
+- DOM
+- MyApp
+  - Header
+  - HomePage
+    - Tools
+      - AddNew
+      - SimpleList
+        - ListItem
+          - Label
+        - ListItem
+          - Label
+        - ListItem
+          - Label
+  - Footer
+
+- diff algorithm
+- compare virtual DOM then update real DOM - 3 steps
