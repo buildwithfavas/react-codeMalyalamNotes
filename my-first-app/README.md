@@ -174,7 +174,11 @@
 
 ## useContext()
 
-- To pass data to child component by bypassing intermediate childrens
+- To pass data to child component by bypassing intermediate childrens   
+- there will be a (Provider, Consumer)
 - const val = useContext(give Context name here);
 - we can give default value for useContext(100); so that it can be taken in components where its parent is not wrapped with Context.provider Component.
+
+## useContext() in class component
+- wrap with <Context.Consumer> where it is used and return a function, place code inside function and argument will be the passed context value 
 
