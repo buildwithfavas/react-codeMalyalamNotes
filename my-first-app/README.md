@@ -171,3 +171,10 @@
   });
 
   - we can write mulitple useEffect();
+
+## useContext()
+
+- To pass data to child component by bypassing intermediate childrens
+- const val = useContext(give Context name here);
+- we can give default value for useContext(100); so that it can be taken in components where its parent is not wrapped with Context.provider Component.
+
