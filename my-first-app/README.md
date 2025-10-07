@@ -54,3 +54,10 @@
 
 ## Controlled Component
 - If a prop controll the functionality of a component then its called controlled component.
+
+## React LifeCycle Methods
+- Mount (ComponentDidMount())
+- Update (ComponentDidUpdate())
+- Unmount (ComponentWillUnmount())
+
+- sideEffects
