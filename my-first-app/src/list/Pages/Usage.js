@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Usage.css';
 
 function Usage() {
 
     const [value, setValue] = useState(0);
     const [color, setColor] = useState('white');
+
+    useEffect(()=>{
+        console.log("Effect 1");
+        return ()=>{
+            console.log("Cleanup 1");
+        }
+    },[]);
+
+    useEffect(()=>{
+        console.log("Effect 2");
+        return ()=>{
+            console.log("Cleanup 2");
+        }
+    },[]);
 
     return (
         <div className='usage'>
