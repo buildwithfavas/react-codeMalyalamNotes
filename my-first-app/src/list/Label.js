@@ -3,12 +3,26 @@ import "./Label.css";
 import { MyContext } from './Pages/HomePage';
 import ToolTip from './Pages/ToolTip';
 import ToolTipUseImperative from './Pages/ToolTipUseImperative';
+import ToolTipUseLayouytEffect from './Pages/ToolTipUseLayouytEffect';
 
 function Label(props) {
     const val = useContext(MyContext);
     const [showToolTip, setShowToolTip] = useState(false);
 
+    const labelRef = useRef();
     const refObj = useRef();
+
+    useEffect(() => {
+        if (showToolTip) {
+            console.log(labelRef.current);
+
+            const width1 = labelRef.current.getBoundingClientRect().width;
+            const width2 = refObj.current.getBoundingClientRect().width;
+            refObj.current.style.left = `${-(width2 - width1) / 2}px`;
+
+            console.log(refObj.current.myTest());
+        }
+    }, [showToolTip]);
 
     // const refObj = usememo(() =>{
     //     return{
@@ -34,7 +48,7 @@ function Label(props) {
         // const width2 = refObj.current.getBoundingClientRect().width;
         // refObj.current.style.left = `${-(width2 - width1) / 2}px`;
 
-        console.log(refObj.current.myTest());
+        // console.log(refObj.current.myTest());
 
         setShowToolTip(true);
     }
@@ -46,6 +60,7 @@ function Label(props) {
     return (
         <div className="list-label-item-container">
             <span
+                ref={labelRef}
                 onClick={() => {
                     props.onAction(props.isActive ? "active" : "non-active");
                 }}
@@ -62,7 +77,8 @@ function Label(props) {
                 This is {props.isActive ? "Active" : "Non Active"} tooltip
             </label> */}
             {/* <ToolTip ref={refObj} showToolTip={showToolTip} /> */}
-            <ToolTipUseImperative ref={refObj} showToolTip={showToolTip} />
+            {/* <ToolTipUseImperative ref={refObj} showToolTip={showToolTip} /> */}
+            <ToolTipUseLayouytEffect ref={refObj} showToolTip={showToolTip} />
         </div>
     );
 }

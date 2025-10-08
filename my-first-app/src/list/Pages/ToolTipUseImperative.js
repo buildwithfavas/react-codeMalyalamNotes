@@ -1,6 +1,6 @@
 import { forwardRef, useImperativeHandle } from 'react';
 
-function ToolTip(props, ref) {
+function ToolTipUseImperative(props, ref) {
 
     const { showToolTip } = props;
 
@@ -21,4 +21,4 @@ function ToolTip(props, ref) {
     );
 };
 
-export default forwardRef(ToolTip);
+export default forwardRef(ToolTipUseImperative);

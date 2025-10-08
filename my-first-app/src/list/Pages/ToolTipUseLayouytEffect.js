@@ -1,17 +1,21 @@
 import { forwardRef } from 'react';
 
-function ToolTip(props, ref) {
+function ToolTipUseLayouytEffect(props, ref) {
 
     const { showToolTip } = props;
-    
+
+    if (!showToolTip) {
+        return null;
+    }
+
     return (
         <label
+            className="tooltip"
             ref={ref}
-            className={`tooltip ${showToolTip ? 'show-tooltip' : 'hide-tooltip'}`}
         >
             This is {props.isActive ? "Active" : "Non Active"} tooltip
         </label>
     );
 };
 
-export default forwardRef(ToolTip);
+export default forwardRef(ToolTipUseLayouytEffect);

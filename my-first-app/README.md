@@ -202,7 +202,11 @@
 - const refObj = useRef();    and put ref = refObj in the tag.
 
 ## forwardRef()
-- to get the ref object of child element in the parent component.
+- To get the ref object of child element in the parent component.
 
 ## useImperativeHandle()  (not recommended)
 - To call a function from the child functional component, from parent component.
+
+## useLayoutEffect()
+- useLayoutEffect() => Synchronus
+- useEffect()       => Asynchronus  (rendering will be two times - jumping/fliker will be there)
