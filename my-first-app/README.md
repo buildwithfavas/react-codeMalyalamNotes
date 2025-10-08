@@ -182,3 +182,16 @@
 ## useContext() in class component
 - wrap with <Context.Consumer> where it is used and return a function, place code inside function and argument will be the passed context value 
 
+## useMemo / React.memo()
+- (for memorize)
+- React.memo(Component name here);
+- we can give dependency also so that whenever the props changes its get rendered
+- const value = useMemo(() => {
+        return {  
+            key: 'value1',
+            activeState: activeState
+        };
+    }, [activeState]);
+
+## useCallback();
+- in case of returning function from a function use useCallback() instead of useMemo(), working will be same (only memorize call backs).

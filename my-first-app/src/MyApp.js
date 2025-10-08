@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import HomePage from './list/Pages/HomePage';
 import Header from "./components/Header";
 import Footer from "./components/Footer";

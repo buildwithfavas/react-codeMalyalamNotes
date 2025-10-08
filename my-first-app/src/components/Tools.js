@@ -13,6 +13,8 @@ class Tools extends React.Component {
         const onlyChild = React.Children.only(children);
         const count = React.Children.count(onlyChild.props.children);
 
+        console.log("RENDER Tools");
+
         return (
             <div>
                 <div className="list-header">
@@ -21,7 +23,7 @@ class Tools extends React.Component {
                         <option value="active">Active</option>
                         <option value="non-active">Non Active</option>
                     </select>
-                    <AddNew/>
+                    <AddNew />
                 </div>
                 {children}
                 <div className="list-footer">

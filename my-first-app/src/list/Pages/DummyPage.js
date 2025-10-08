@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 class DummyPage extends Component {
 
@@ -15,6 +15,7 @@ class DummyPage extends Component {
     }
 
     render() {
+        console.log("RENDER DummyPage");
         return (
             <div>
                 {this.props.name}

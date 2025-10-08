@@ -6,6 +6,8 @@ function Header(props) {
         onMenuSelect
     } = props;
 
+     console.log("RENDER Header");
+
     return (
         <div className='app-header'>
             <span className='header-title'>Code Malayalam</span>
