@@ -215,3 +215,10 @@
 - custom hook: A wrapper over hook (reusable)
 - function name starts with 'use'
 - hook rules - write in top level, Don't write inside conditions
+
+## useReducer()
+- Manage State in Functional Component
+- Complex state 
+- Update state from child
+- Pattern is different from useState
+- Pattern same as Redux
