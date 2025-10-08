@@ -1,10 +1,13 @@
 import { useState, useContext, useRef, useCallback } from "react";
 import "./Label.css";
 import { MyContext } from './Pages/HomePage';
+import ToolTip from './Pages/ToolTip';
+import ToolTipUseImperative from './Pages/ToolTipUseImperative';
 
 function Label(props) {
     const val = useContext(MyContext);
     const [showToolTip, setShowToolTip] = useState(false);
+
     const refObj = useRef();
 
     // const refObj = usememo(() =>{
@@ -14,7 +17,7 @@ function Label(props) {
     // });
 
     const refCallback = useCallback((domItem) => {
-                console.log("Inside Function");
+        console.log("Inside Function");
         console.log(domItem);
     }, []);
 
@@ -24,13 +27,14 @@ function Label(props) {
     if (val === false) { return null }
 
     const handleMouseEnter = (evt) => {
-        console.log(evt.target);
-        console.log(refObj.current);
+        // console.log(evt.target);
+        // console.log(refObj.current);
 
-        const width1 = evt.target.getBoundingClientRect().width;
-        const width2 = refObj.current.getBoundingClientRect().width;
+        // const width1 = evt.target.getBoundingClientRect().width;
+        // const width2 = refObj.current.getBoundingClientRect().width;
+        // refObj.current.style.left = `${-(width2 - width1) / 2}px`;
 
-        refObj.current.style.left = `${-(width2 - width1) / 2}px`;
+        console.log(refObj.current.myTest());
 
         setShowToolTip(true);
     }
@@ -52,11 +56,13 @@ function Label(props) {
             >
                 {props.isActive ? "Active" : "Non Active"}
             </span>
-            <label
+            {/* <label
                 ref={refObj}
                 className={`tooltip ${showToolTip ? 'show-tooltip' : 'hide-tooltip'}`}>
                 This is {props.isActive ? "Active" : "Non Active"} tooltip
-            </label>
+            </label> */}
+            {/* <ToolTip ref={refObj} showToolTip={showToolTip} /> */}
+            <ToolTipUseImperative ref={refObj} showToolTip={showToolTip} />
         </div>
     );
 }

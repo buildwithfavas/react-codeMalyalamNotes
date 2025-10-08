@@ -1,16 +1,16 @@
 # React
 
-- Javascript library to build Frontend/UI Components in a web page
+- Javascript library to build Frontend/UI Components in a web page.
 
 ## Library vs Framework
 
-- Framework will give all tools for development and testing
-- Any change in application should be done with framework
-- Library is just a supporting software
+- Framework will give all tools for development and testing.
+- Any change in application should be done with framework.
+- Library is just a supporting software.
 
 - create-react-app (Dev environment)
 
-- Development tools in react is optional
+- Development tools in react is optional.
 - But since it helps, almost everyone uses it.
 
 - Single Page Application (SPA)
@@ -22,10 +22,10 @@
 - npx create-react-app <"project name here">
 - npm start -for run the code.
 
-- Webpack & Webpack dev server
-- Babel : taranspile JSX to JS
-- Webpack : packing of files like JS, Images, CSS into a bundle
-- Webpack dev server : For running on server on a local host
+- Webpack & Webpack dev server.
+- Babel : taranspile JSX to JS.
+- Webpack : packing of files like JS, Images, CSS into a bundle.
+- Webpack dev server : For running on server on a local host.
 
 - npm run build => creates a build folder with all file like js and all.
 
@@ -90,7 +90,7 @@
   - Footer
 
 - diff algorithm
-- compare virtual DOM then update real DOM - 3 steps
+- compare virtual DOM then update real DOM - 3 steps.
 
 ## React Hooks
 
@@ -127,11 +127,11 @@
   - No 'this' problems
   - Reusing stateful logic
   - Reduced use of HOC (Higher Order Component)
-- Behind the seen Hooks works by using Closure
+- Behind the seen Hooks works by using Closure.
 
 ## useState()
 
-- to manage state in functional components
+- to manage state in functional components.
 
   - Initialize State
   - Update State
@@ -142,8 +142,8 @@
 
 ## useEffect()
 
-- Function with side Effect (not pure)
-- Mount (ComponentDidMount()), Update (ComponentDidUpdate()), Unmount (ComponentWillUnmount()) in class can be replaced with this useEffect()
+- Function with side Effect (not pure).
+- Mount (ComponentDidMount()), Update (ComponentDidUpdate()), Unmount (ComponentWillUnmount()) in class can be replaced with this useEffect().
 
 - Example:
   - (1) Will call on all Render
@@ -174,18 +174,18 @@
 
 ## useContext()
 
-- To pass data to child component by bypassing intermediate childrens   
-- there will be a (Provider, Consumer)
+- To pass data to child component by bypassing intermediate childrens.
+- there will be a (Provider, Consumer).
 - const val = useContext(give Context name here);
 - we can give default value for useContext(100); so that it can be taken in components where its parent is not wrapped with Context.provider Component.
 
 ## useContext() in class component
-- wrap with <Context.Consumer> where it is used and return a function, place code inside function and argument will be the passed context value 
+- wrap with <Context.Consumer> where it is used and return a function, place code inside function and argument will be the passed context value .
 
 ## useMemo / React.memo()
-- (for memorize)
+- (for memorize).
 - React.memo(Component name here);
-- we can give dependency also so that whenever the props changes its get rendered
+- we can give dependency also so that whenever the props changes its get rendered.
 - const value = useMemo(() => {
         return {  
             key: 'value1',
@@ -197,6 +197,12 @@
 - in case of returning function from a function use useCallback() instead of useMemo(), working will be same (only memorize call backs).
 
 ## ref & useRef();
-- we can get DOM element by events or by ref
-- It will be called while attaching and dettaching occurs
-- const refObj = useRef();    and put ref = refObj in the tag
+- we can get DOM element by events or by ref.
+- It will be called while attaching and dettaching occurs.
+- const refObj = useRef();    and put ref = refObj in the tag.
+
+## forwardRef()
+- to get the ref object of child element in the parent component.
+
+## useImperativeHandle()  (not recommended)
+- To call a function from the child functional component, from parent component.
