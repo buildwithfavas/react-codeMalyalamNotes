@@ -210,3 +210,8 @@
 ## useLayoutEffect()
 - useLayoutEffect() => Synchronus
 - useEffect()       => Asynchronus  (rendering will be two times - jumping/fliker will be there)
+
+## CustomHooks & useDebugValue()
+- custom hook: A wrapper over hook (reusable)
+- function name starts with 'use'
+- hook rules - write in top level, Don't write inside conditions

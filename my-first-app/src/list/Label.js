@@ -1,28 +1,17 @@
-import { useState, useContext, useRef, useCallback } from "react";
+import { useState, useContext, useRef, useCallback, useLayoutEffect } from "react";
 import "./Label.css";
 import { MyContext } from './Pages/HomePage';
 import ToolTip from './Pages/ToolTip';
 import ToolTipUseImperative from './Pages/ToolTipUseImperative';
 import ToolTipUseLayouytEffect from './Pages/ToolTipUseLayouytEffect';
+import ToolTipCustomHook from './Pages/ToolTipCustomHook';
+import { useTest } from '../Hooks/ourHooks';
+import { useTooltip} from '../Hooks/ourHooks';
 
 function Label(props) {
     const val = useContext(MyContext);
-    const [showToolTip, setShowToolTip] = useState(false);
 
-    const labelRef = useRef();
-    const refObj = useRef();
-
-    useEffect(() => {
-        if (showToolTip) {
-            console.log(labelRef.current);
-
-            const width1 = labelRef.current.getBoundingClientRect().width;
-            const width2 = refObj.current.getBoundingClientRect().width;
-            refObj.current.style.left = `${-(width2 - width1) / 2}px`;
-
-            console.log(refObj.current.myTest());
-        }
-    }, [showToolTip]);
+    const [showToolTip, setShowToolTip, labelRef, refObj] = useTooltip();
 
     // const refObj = usememo(() =>{
     //     return{
@@ -57,6 +46,8 @@ function Label(props) {
         setShowToolTip(false);
     }
 
+    const text = props.isActive ? "Active" : "Non Active"
+
     return (
         <div className="list-label-item-container">
             <span
@@ -78,7 +69,8 @@ function Label(props) {
             </label> */}
             {/* <ToolTip ref={refObj} showToolTip={showToolTip} /> */}
             {/* <ToolTipUseImperative ref={refObj} showToolTip={showToolTip} /> */}
-            <ToolTipUseLayouytEffect ref={refObj} showToolTip={showToolTip} />
+            {/* <ToolTipUseLayouytEffect ref={refObj} showToolTip={showToolTip} /> */}
+            <ToolTipCustomHook ref={refObj} showToolTip={showToolTip} message={`This is ${text}`} />
         </div>
     );
 }

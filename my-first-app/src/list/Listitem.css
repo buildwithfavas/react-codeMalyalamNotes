@@ -20,7 +20,12 @@
 }
 
 .list-title label {
+  color: black;
+}
+
+.list-title > label {
   cursor: pointer;
   font-size: 12px;
   color: blue;
+  position: relative;
 }
