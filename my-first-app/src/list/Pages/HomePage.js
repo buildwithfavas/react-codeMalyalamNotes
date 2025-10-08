@@ -70,7 +70,7 @@ function HomePage(props) {
     const handleClick = useCallback(() => {
         console.log('Clicked', activeState);
     }, [activeState]);
-
+    
     return (
         <div>
             <div>

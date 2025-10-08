@@ -195,3 +195,8 @@
 
 ## useCallback();
 - in case of returning function from a function use useCallback() instead of useMemo(), working will be same (only memorize call backs).
+
+## ref & useRef();
+- we can get DOM element by events or by ref
+- It will be called while attaching and dettaching occurs
+- const refObj = useRef();    and put ref = refObj in the tag
