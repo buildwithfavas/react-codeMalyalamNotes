@@ -18,3 +18,8 @@
    console.log(obj);
   }} to="/">
 
+
+## Routing Parameters
+  - useParameters
+  - searchPartameters
+

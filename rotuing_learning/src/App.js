@@ -6,6 +6,7 @@ import Settings from './Pages/Settings';
 import Users from './Pages/Users';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './Components/Header';
+import Details from './Pages/Details';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='settings' element={<Settings />} />
         <Route path='usage' element={<Usage />} />
         <Route path='users' element={<Users />} />
+        <Route path='details/:userId' element={<Details />} />
       </Routes>
     </BrowserRouter>
   );
