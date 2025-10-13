@@ -7,12 +7,13 @@ import Users from './Pages/Users';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './Components/Header';
 import Details from './Pages/Details';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <Header/>
+        <Header />
         {/* <MyRouter>
         <Home path="home" />
         <Usage path="usage" />
@@ -26,6 +27,7 @@ function App() {
         <Route path='usage' element={<Usage />} />
         <Route path='users' element={<Users />} />
         <Route path='details/:userId' element={<Details />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

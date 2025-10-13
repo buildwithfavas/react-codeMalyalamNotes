@@ -23,3 +23,18 @@
   - useParameters
   - searchPartameters
 
+## Relative Path
+- Default Route
+- useNagivate
+
+- Path
+  - Absolute path starts with '/' => it adds route to the root eg: (https://localhost:3000/login  to https://localhost:3000/home) 
+  - Relative path don't have '/' => it adds route to the existing route eg: (https://localhost:3000/login  to https://localhost:3000/login/home) 
+
+  - . => Current route
+  - ..=> Parent route
+
+- useNavigate
+- useLocate
+
+
