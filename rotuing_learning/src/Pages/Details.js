@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate, useLocation, NavLink, Routes, Route } from 'react-router-dom';
+import { useParams, useNavigate, useLocation, NavLink, Outlet } from 'react-router-dom';
 import axios from 'axios';
 import './Details.css';
-import Marks from './Marks';
-import Sports from './Sports';
-import Remarks from './Remarks';
 
 export default function Details() {
 
@@ -43,14 +40,11 @@ export default function Details() {
         <NavLink to="remarks"><span>Remarks</span></NavLink>
       </div>
       <div className='details-body'>
-        <Routes>
-          <Route path='' element={<Marks />} />
-          <Route path='sports' element={<Sports />} />
-          <Route path='remarks' element={<Remarks />} />
-        </Routes>
+        <Outlet context={user} />
       </div>
       <div><button onClick={() => {
-        navigate(-1);
+        navigate('..');
+        //navigate(-1);
         // navigate('/users');
       }}>BACK</button></div>
 

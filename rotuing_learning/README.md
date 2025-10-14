@@ -39,3 +39,6 @@
 ## Nested Routes
 - Descended Routes
 - Nested Routes
+- Outlet
+- Index Routes
+

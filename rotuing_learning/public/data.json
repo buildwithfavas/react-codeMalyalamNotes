@@ -7,15 +7,15 @@
     "phone": "0987098098",
     "isActive": false,
     "marks": {
-      "physics":[46, 66, 78, 56, 87],
-      "chemistry":[46, 66, 78, 56, 87],
-      "maths":[46, 66, 78, 56, 87]
+      "physics": [46, 66, 78, 56, 87],
+      "chemistry": [48, 69, 34, 76, 17],
+      "maths": [45, 66, 78, 56, 87]
     },
-    "sports":{
-      "highjump":1,
-      "longjump":-1
+    "sports": {
+      "highjump": 1,
+      "longjump": -1
     },
-    "remarks":["Notes not submitted"]
+    "remarks": ["Notes not submitted"]
   },
   {
     "id": 2,
@@ -25,15 +25,15 @@
     "phone": "07978689865",
     "isActive": true,
     "marks": {
-      "physics":[46, 66, 78, 56, 87],
-      "chemistry":[46, 66, 78, 56, 87],
-      "maths":[46, 66, 78, 56, 87]
+      "physics": [46, 66, 78, 56, 87],
+      "chemistry": [46, 66, 78, 56, 87],
+      "maths": [46, 66, 78, 56, 87]
     },
-    "sports":{
-      "highjump":1,
-      "longjump":-1
+    "sports": {
+      "highjump": 1,
+      "longjump": -1
     },
-    "remarks":["Notes not submitted"]
+    "remarks": ["Notes not submitted"]
   },
   {
     "id": 3,
@@ -41,7 +41,17 @@
     "class": "8",
     "address": "1601 E Alton Gloor Blvd",
     "phone": "08757465487",
-    "isActive": false
+    "isActive": false,
+    "marks": {
+      "physics": [46, 66, 78, 56, 87],
+      "chemistry": [46, 66, 78, 56, 87],
+      "maths": [46, 66, 78, 56, 87]
+    },
+    "sports": {
+      "highjump": 1,
+      "longjump": -1
+    },
+    "remarks": ["Notes not submitted"]
   },
   {
     "id": 4,
@@ -51,15 +61,15 @@
     "phone": "07978689865",
     "isActive": true,
     "marks": {
-      "physics":[46, 66, 78, 56, 87],
-      "chemistry":[46, 66, 78, 56, 87],
-      "maths":[46, 66, 78, 56, 87]
+      "physics": [46, 66, 78, 56, 87],
+      "chemistry": [46, 66, 78, 56, 87],
+      "maths": [46, 66, 78, 56, 87]
     },
-    "sports":{
-      "highjump":1,
-      "longjump":-1
+    "sports": {
+      "highjump": 1,
+      "longjump": -1
     },
-    "remarks":["Notes not submitted"]
+    "remarks": ["Notes not submitted"]
   },
   {
     "id": 5,
@@ -69,15 +79,15 @@
     "phone": "07978689865",
     "isActive": true,
     "marks": {
-      "physics":[46, 66, 78, 56, 87],
-      "chemistry":[46, 66, 78, 56, 87],
-      "maths":[46, 66, 78, 56, 87]
+      "physics": [46, 66, 78, 56, 87],
+      "chemistry": [46, 66, 78, 56, 87],
+      "maths": [46, 66, 78, 56, 87]
     },
-    "sports":{
-      "highjump":1,
-      "longjump":-1
+    "sports": {
+      "highjump": 1,
+      "longjump": -1
     },
-    "remarks":["Notes not submitted"]
+    "remarks": ["Notes not submitted"]
   },
   {
     "id": 6,
@@ -87,14 +97,14 @@
     "phone": "07978689865",
     "isActive": true,
     "marks": {
-      "physics":[46, 66, 78, 56, 87],
-      "chemistry":[46, 66, 78, 56, 87],
-      "maths":[46, 66, 78, 56, 87]
+      "physics": [46, 66, 78, 56, 87],
+      "chemistry": [46, 66, 78, 56, 87],
+      "maths": [46, 66, 78, 56, 87]
     },
-    "sports":{
-      "highjump":1,
-      "longjump":-1
+    "sports": {
+      "highjump": 1,
+      "longjump": -1
     },
-    "remarks":["Notes not submitted"]
+    "remarks": ["Notes not submitted"]
   }
 ]
