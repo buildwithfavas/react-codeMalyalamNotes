@@ -5,7 +5,17 @@
     "class": "6",
     "address": "1270 Diamond Springs Rd #102",
     "phone": "0987098098",
-    "isActive": false
+    "isActive": false,
+    "marks": {
+      "physics":[46, 66, 78, 56, 87],
+      "chemistry":[46, 66, 78, 56, 87],
+      "maths":[46, 66, 78, 56, 87]
+    },
+    "sports":{
+      "highjump":1,
+      "longjump":-1
+    },
+    "remarks":["Notes not submitted"]
   },
   {
     "id": 2,
@@ -13,7 +23,17 @@
     "class": "7",
     "address": "325 Kennedy memorial Dr",
     "phone": "07978689865",
-    "isActive": true
+    "isActive": true,
+    "marks": {
+      "physics":[46, 66, 78, 56, 87],
+      "chemistry":[46, 66, 78, 56, 87],
+      "maths":[46, 66, 78, 56, 87]
+    },
+    "sports":{
+      "highjump":1,
+      "longjump":-1
+    },
+    "remarks":["Notes not submitted"]
   },
   {
     "id": 3,
@@ -29,7 +49,17 @@
     "class": "6",
     "address": "325 Kennedy memorial Dr",
     "phone": "07978689865",
-    "isActive": true
+    "isActive": true,
+    "marks": {
+      "physics":[46, 66, 78, 56, 87],
+      "chemistry":[46, 66, 78, 56, 87],
+      "maths":[46, 66, 78, 56, 87]
+    },
+    "sports":{
+      "highjump":1,
+      "longjump":-1
+    },
+    "remarks":["Notes not submitted"]
   },
   {
     "id": 5,
@@ -37,7 +67,17 @@
     "class": "9",
     "address": "325 Kennedy memorial Dr",
     "phone": "07978689865",
-    "isActive": true
+    "isActive": true,
+    "marks": {
+      "physics":[46, 66, 78, 56, 87],
+      "chemistry":[46, 66, 78, 56, 87],
+      "maths":[46, 66, 78, 56, 87]
+    },
+    "sports":{
+      "highjump":1,
+      "longjump":-1
+    },
+    "remarks":["Notes not submitted"]
   },
   {
     "id": 6,
@@ -45,6 +85,16 @@
     "class": "7",
     "address": "325 Kennedy memorial Dr",
     "phone": "07978689865",
-    "isActive": true
+    "isActive": true,
+    "marks": {
+      "physics":[46, 66, 78, 56, 87],
+      "chemistry":[46, 66, 78, 56, 87],
+      "maths":[46, 66, 78, 56, 87]
+    },
+    "sports":{
+      "highjump":1,
+      "longjump":-1
+    },
+    "remarks":["Notes not submitted"]
   }
 ]

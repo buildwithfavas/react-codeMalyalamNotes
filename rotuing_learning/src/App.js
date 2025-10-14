@@ -26,7 +26,7 @@ function App() {
         <Route path='settings' element={<Settings />} />
         <Route path='usage' element={<Usage />} />
         <Route path='users' element={<Users />} />
-        <Route path='details/:userId' element={<Details />} />
+        <Route path='details/:userId/*' element={<Details />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

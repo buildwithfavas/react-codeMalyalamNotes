@@ -8,3 +8,22 @@
   font-size: 8px;
   color: slategrey;
 }
+
+.details button {
+  margin-top: 5px;
+}
+
+.sub-menu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sub-menu a {
+  padding: 5px;
+  display: inline-block;
+  background: darkgrey;
+}
+
+.sub-menu .active span {
+  background: rgb(12, 48, 109);
+}

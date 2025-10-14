@@ -18,7 +18,6 @@
    console.log(obj);
   }} to="/">
 
-
 ## Routing Parameters
   - useParameters
   - searchPartameters
@@ -37,4 +36,6 @@
 - useNavigate
 - useLocate
 
-
+## Nested Routes
+- Descended Routes
+- Nested Routes
