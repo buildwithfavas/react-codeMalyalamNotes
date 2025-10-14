@@ -42,3 +42,14 @@
 - Outlet
 - Index Routes
 
+## Hosting React Router
+- Github
+- 404 Error
+
+## Dynamic Import / React Router
+- Static Bundling => loading all documents during initial load.
+- Dynamic Import (Lazy loading) => load only when event or something in itial load not done. 
+- Dynamic component loading.
+- React.lazy(), Suspense, Fallback.
+- Code splitting => during dynamic loading the js fle bundled as seprate thats called code splitting.
+- React Router & Dynamic Loading.
