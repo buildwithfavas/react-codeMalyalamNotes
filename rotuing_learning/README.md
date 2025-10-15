@@ -53,3 +53,11 @@
 - React.lazy(), Suspense, Fallback.
 - Code splitting => during dynamic loading the js fle bundled as seprate thats called code splitting.
 - React Router & Dynamic Loading.
+
+## Protected Routes
+- Public Routes
+  - No Authentication 
+  - Anubody can access
+- Role based routes
+  - Type of proctected routes
+  - Allows based on roles
