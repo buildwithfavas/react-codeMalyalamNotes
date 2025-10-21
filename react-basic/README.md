@@ -146,29 +146,35 @@
 - Mount (ComponentDidMount()), Update (ComponentDidUpdate()), Unmount (ComponentWillUnmount()) in class can be replaced with this useEffect().
 
 - Example:
+
   - (1) Will call on all Render
-  useEffect(()=>{
-  console.log(value);
-  return ()=>{
-  console.log("cleanup function");    //CleanUp function
-  }
-  });
+    useEffect(()=>{
+    console.log(value);
+    return ()=>{
+    console.log("cleanup function"); //CleanUp function
+    }
+    });
 
   - (2) Will call on changing state variable
-  useEffect(()=>{
-  console.log(value);
-  return ()=>{
-  console.log("cleanup function");    //CleanUp function
-  }
-  },[value]); //Dependancies
+    useEffect(()=>{
+    console.log(value);
+    return ()=>{
+    console.log("cleanup function"); //CleanUp function
+    }
+    },[value]); //Dependancies
 
   - (3) Will call only on mounting and unmouting
-  useEffect(()=>{
-  console.log(value);
-  return ()=>{
-  console.log("cleanup function");    //CleanUp function
-  }
-  });
+    useEffect(()=>{
+    console.log(value);
+    return ()=>{
+    console.log("cleanup function"); //CleanUp function
+    }
+    },[]);
+
+    - (4) Will call only on mounting
+    useEffect(()=>{
+    console.log(value);
+    },[]);
 
   - we can write mulitple useEffect();
 
@@ -180,45 +186,56 @@
 - we can give default value for useContext(100); so that it can be taken in components where its parent is not wrapped with Context.provider Component.
 
 ## useContext() in class component
+
 - wrap with <Context.Consumer> where it is used and return a function, place code inside function and argument will be the passed context value .
 
 ## useMemo / React.memo()
+
 - (for memorize).
 - React.memo(Component name here);
 - we can give dependency also so that whenever the props changes its get rendered.
+- useMemo() is used because sometimes props may pass object will be considered as new value as its reference is different so use useMemo to avoid it. Give dependency in the case the object has variables that to be renedered on change otherwise it don't gets rendered.
 - const value = useMemo(() => {
-        return {  
-            key: 'value1',
-            activeState: activeState
-        };
-    }, [activeState]);
+  return {  
+   key: 'value1',
+  activeState: activeState
+  };
+  }, [activeState]);
 
 ## useCallback();
+
 - in case of returning function from a function use useCallback() instead of useMemo(), working will be same (only memorize call backs).
+- both useMemo() and useCallback() used with React.memo when child component is there for rendering.
 
 ## ref & useRef();
+
 - we can get DOM element by events or by ref.
 - It will be called while attaching and dettaching occurs.
-- const refObj = useRef();    and put ref = refObj in the tag.
+- const refObj = useRef(); and put ref = refObj in the tag.
 
 ## forwardRef()
+
 - To get the ref object of child element in the parent component.
 
-## useImperativeHandle()  (not recommended)
+## useImperativeHandle() (not recommended)
+
 - To call a function from the child functional component, from parent component.
 
 ## useLayoutEffect()
+
 - useLayoutEffect() => Synchronus
-- useEffect()       => Asynchronus  (rendering will be two times - jumping/fliker will be there)
+- useEffect() => Asynchronus (rendering will be two times - jumping/fliker will be there)
 
 ## CustomHooks & useDebugValue()
+
 - custom hook: A wrapper over hook (reusable)
 - function name starts with 'use'
 - hook rules - write in top level, Don't write inside conditions
 
 ## useReducer()
+
 - Manage State in Functional Component
-- Complex state 
+- Complex state
 - Update state from child
 - Pattern is different from useState
 - Pattern same as Redux
