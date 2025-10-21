@@ -10,12 +10,15 @@ export default function MyApp() {
 
     return (
         <div>
+            <h2>This is by using function component</h2>
             <button onClick={() => {
                 dispatch({
                     type: 'Increment'
                 });
             }}>Increment</button>
+            <hr/>
             <label>{value}</label>
+            <hr/>
             <button onClick={() => {
                 dispatch({
                     type: 'Decrement'

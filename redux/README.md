@@ -17,6 +17,13 @@
 - Events(onClick, onFetch) => Dispatch(action) => Reducer(state, action){return newState;} => State => Subscribe => DOM update.
 
 ## react-redux
-- React Hooks:
+- React Hooks(For functional components):
   - useSelector() //to get state from the store
   - useDispatch() // to dispatch actions
+
+- Class components:
+- connect()
+
+
+
+
