@@ -1,0 +1,29 @@
+// Old way by using redux core library
+
+import { createStore } from 'redux';
+
+const initialState = {
+    value: 0
+};
+
+function appReducer(prevState = initialState, action) {
+    switch (action.type) {
+        case 'Increment':
+            return {
+                ...prevState,
+                value: prevState.value + 1
+            };
+        case 'Decrement':
+            return {
+                ...prevState,
+                value: prevState.value - 1
+            };
+
+        default:
+            return prevState;
+    }
+}
+
+const store = createStore(appReducer);
+
+export default store;
