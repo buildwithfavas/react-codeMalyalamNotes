@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
+// Example of how to use redux in class components.
+
 class Settings extends React.Component {
     render() {
 

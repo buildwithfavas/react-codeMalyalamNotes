@@ -1,4 +1,4 @@
-// Old way by using redux core library
+// This example not have any other file linked or not run any output, because its old way not needed.
 
 import { createStore } from 'redux';
 

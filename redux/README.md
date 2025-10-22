@@ -24,6 +24,8 @@
 - Class components:
 - connect()
 
+## combineReaducers() & Action Creators
+- combineReducers() is a Redux helper function that lets you split your Redux state and logic into multiple smaller reducers, then combine them into one main reducer.   (Merges multiple reducers into one root reducer)
 
-
+- An Action Creator is just a function that returns an action object.
 

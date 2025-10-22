@@ -1,5 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux'
 
+// Example of how to use redux in function components.
+
 export default function MyApp() {
 
     const value = useSelector((state) => {

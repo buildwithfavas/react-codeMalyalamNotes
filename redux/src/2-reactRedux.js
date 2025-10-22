@@ -1,5 +1,3 @@
-// Old way by using redux core library
-
 import { createStore } from 'redux';
 
 const initialState = {
