@@ -29,3 +29,14 @@
 
 - An Action Creator is just a function that returns an action object.
 
+## Middleware, Thunk, Logger
+- Middleware : Extra step to control an Action.
+  -> Logger Middleware:
+    - State before Action
+    - Print Action
+    - State after Action
+      - (npm i redux-logger)
+  -> Thunk Middleware
+    - Helps in Asynchronous action (interface)
+    - dispatch(function)
+    

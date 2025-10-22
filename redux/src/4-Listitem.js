@@ -1,0 +1,28 @@
+import "./4-Listitem.css";
+
+function ListItem(props) {
+
+    const {
+        title,
+        descr,
+        isActive,
+    } = props;
+
+    return (
+        <div className='list-item'>
+            <div className='list-title'>
+                <h4>{title}</h4>
+            </div>
+            <div className='list-descr'>
+                {descr}
+            </div>
+            <br></br>
+            <div className='list-label'>
+                <label>{isActive.toString()}</label>
+            </div>
+
+        </div>
+    );
+}
+
+export default ListItem;
